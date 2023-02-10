@@ -1,27 +1,33 @@
-# AppGithub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## :memo: Descrição
+Aplicação desenvolvida para pesquisa e consulta de perfis e seus respectivos repositorios do GitHub.
 
-## Development server
+## :books: Funcionalidades
+* <b>Funcionalidade 1</b>: Consulta e valida o Perfil
+* <b>Funcionalidade 2</b>: Exibe os repositórios, o perfil podendo acessá-los.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :wrench: Tecnologias utilizadas
+* Angular, CSS3, HTML5, TypeScript, 
 
-## Code scaffolding
+## :rocket: Requisitos
+* Deve-se ter a seguinte versão do node: 14.17.6
+* Deve-se ter a seguinte versão do NPM: 6.14.15
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Rodar o app pela primeira vez
 
-## Build
+```bash
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+ng serve
 
-## Running unit tests
+```
+##  Estrutura
+O esqueleto da aplicação foi preparado com a finalidade de estar pronta pra ser uma grande aplicação, devido a sua estrutura de arquivos segmentada por funções
+capazes de receber componentização reutilizável para todo o código e a segmentação por services, components reutilizáveis. Podendo ainda receber guards e outras funções como controle de estados.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##  Motivação
+*  <b>Bootstrap</b> devido a agilidade, rapidez e a popularidade que a biblioteca tem, fornecendo formas de se utilizar display grid, flexbox e componentes.
+*  <b>Moment</b> devido a facilidade para se lidar com datas, desde a formatar e fazer contas.
+*  <b>Spinner Feito a Mão</b> Para mostrar um pouco do meu conhecimento com css e e animação
+## :dart: Status do projeto
+Completo
