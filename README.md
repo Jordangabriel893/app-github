@@ -21,6 +21,9 @@ npm install
 ng serve
 
 ```
-
+##  Motivação
+*  <b>Bootstrap</b> devido a agilidade, rapidez e a popularidade que a biblioteca tem, fornecendo formas de se utilizar display grid, flexbox e componentes.
+*  <b>Moment</b> devido a facilidade para se lidar com datas, desde a formatar e fazer contas.
+*  <b>Spinner Feito a Mão</b> Para mostrar um pouco do meu conhecimento com css e e animação
 ## :dart: Status do projeto
 Completo
