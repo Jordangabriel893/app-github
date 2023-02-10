@@ -1,27 +1,26 @@
-# AppGithub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## :memo: Descrição
+Aplicação desenvolvida para pesquisa e consulta de perfis e seus respectivos repositorios do GitHub.
 
-## Development server
+## :books: Funcionalidades
+* <b>Funcionalidade 1</b>: Consulta e valida o Perfil
+* <b>Funcionalidade 2</b>: Exibe os repositórios, o perfil podendo acessá-los.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :wrench: Tecnologias utilizadas
+* Angular, CSS3, HTML5, TypeScript, 
 
-## Code scaffolding
+## :rocket: Requisitos
+* Deve-se ter a seguinte versão do node: 14.17.6
+* Deve-se ter a seguinte versão do NPM: 6.14.15
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Rodar o app pela primeira vez
 
-## Build
+```bash
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+ng serve
 
-## Running unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## :dart: Status do projeto
+Completo
