@@ -27,7 +27,7 @@ export class PerfilComponent implements OnInit, OnDestroy {
   }
    getInfoUser(){
     this.sub.push(this.githubService.getUser(this.userName).subscribe( resp => {
-      this.userInfo = resp
+      this.userInfo = resp;
     })
   )
   }
