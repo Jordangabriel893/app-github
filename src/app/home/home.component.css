@@ -1,0 +1,32 @@
+.container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo{
+  margin-bottom: 5%;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search input{
+  width: 60%;
+  margin-right: 4%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.btn-primary{
+  width: 15%;
+  background-color: #8c19d2;
+  border-color: #8c19d2;
+}

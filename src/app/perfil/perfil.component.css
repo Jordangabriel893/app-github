@@ -1,0 +1,74 @@
+.navbar{
+  height: 10vh;
+}
+
+.logo img{
+  width: 28vh;
+  margin-left: 5vh;
+}
+
+.search input {
+  width: 100vh;
+  height: 5vh;
+  border: 1px solid #8c19d2;
+  border-radius: 5px;
+  margin-left: 2vh;
+}
+
+.conteudo {
+  margin-top: 4vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin{
+  margin-bottom: 3vh;
+  margin-left: 2vh;
+}
+
+.foto-perfil{
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 6vh;
+  width: 6vh;
+  margin: 2vh;
+}
+
+.infos-perfil{
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+.btn-primary{
+  width: 100%;
+  background-color: #8c19d2;
+  border-color: #8c19d2;
+  margin-top: 4vh;
+}
+
+b {
+  font-size: 1.2em;
+}
+
+.repositorio-info {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding-left: 1vh;
+}
+
+img{
+  padding-right: 1vh;
+}
