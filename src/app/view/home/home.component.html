@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="logo">
+    <img src="/assets/img/Search d_evs.png">
+  </div>
+  <div class="search">
+    <app-search-input (emitUser)="receiveUser($event)" [enableInput]="true" [classe]="'home-input'" [classePai]="'input-search'"></app-search-input>
+    <button class="btn btn-primary" (click)="verifyUser()">Search</button>
+  </div>
+  <div class="messageErro mt-2" *ngIf="messageError">Usuário inválido</div>
+  <div class="section-spinner d-flex justify-content-center col-12" *ngIf="loading">
+    <div class="spinner"> </div>
+  </div>
+</div>
+
+<div class="container-mobile  d-flex justify-content-center align-items-center flex-column">
+  <div class="logo ">
+    <img src="/assets/img/Search d_evs.png">
+  </div>
+  <div class="search flex-column">
+    <app-search-input (emitUser)="receiveUser($event)" [enableInput]="true" [classe]="'home-input'" [classePai]="'input-search'"></app-search-input>
+    <div class="messageErro mt-2" *ngIf="messageError">Usuário inválido</div>
+    <button class="btn btn-primary" (click)="verifyUser()">Search</button>
+    <div class="section-spinner d-flex justify-content-center col-12" *ngIf="loading">
+      <div class="spinner"> </div>
+    </div>
+  </div>
+</div>

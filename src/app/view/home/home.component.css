@@ -1,0 +1,104 @@
+.container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo{
+  margin-bottom: 5%;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+app-search-input{
+  width: 60%;
+  margin-right: 4%;
+  height: 100%;
+}
+
+.btn-primary{
+  width: 15%;
+  background-color: #8c19d2;
+  border-color: #8c19d2;
+}
+
+/* Spinner */
+.section-spinner {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 3vh;
+}
+.messageErro{
+  width: 79%;
+  color: red;
+}
+.spinner {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: rgb(9, 91, 138);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(min-width:320px ) and (max-width:1300px){
+  .container{
+    display: none;
+  }
+  .container-mobile{
+    width: 100%;
+    height: 100vh;
+  }
+  .logo img{
+    width: 15rem;
+  }
+  app-search-input{
+    width: 90%;
+    margin: 0;
+    height: 9vh;
+  }
+  .messageErro{
+    width: 90%;
+    color: red;
+  }
+  button{
+    margin-top: 8vw;
+    width: 90% !important;
+  }
+  
+}
+@media(min-width:768px ) and (max-width:1300px){
+  .logo img{
+    width: 30rem;
+  }
+  app-search-input{
+    width: 90%;
+    margin: 0;
+    height: 9vh;
+  }
+  .messageErro{
+    width: 90%;
+    color: red;
+  }
+  button{
+    margin-top: 8vw;
+    width: 90% !important;
+    height: 8vh;
+  }
+}

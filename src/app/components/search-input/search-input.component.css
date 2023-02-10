@@ -1,0 +1,30 @@
+.input-search{
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 5px; 
+}
+.home-input{
+    width: 100%;
+    border:none;
+  }
+  .perfil-input-search{
+    border: 1px solid #8c19d2;
+    border-radius: 5px;
+    margin-left: 2vh;
+  }
+  .perfil-input{
+  width: 100vh;
+  height: 5vh;
+  border:none;
+  
+  }
+  img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }

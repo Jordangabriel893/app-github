@@ -1,0 +1,155 @@
+<body>
+  <div class="navbar ">
+
+    <div class="logo col-3">
+      <img src="/assets/img/Search d_evs.png" [routerLink]="['/home']">
+    </div>
+
+    <div class="search col-9">
+      <!-- <input placeholder="Search" type="text"> -->
+      <app-search-input [classePai]="'perfil-input-search'" [classe]="'perfil-input'" [user]="this.userName"
+        [enableInput]="false"></app-search-input>
+    </div>
+
+  </div>
+
+  <div class="col-12 m-0" *ngIf="userInfo">
+    <div class="col-12 d-flex">
+      <div class="card-perfil col-3">
+        <div class="flex-row d-flex">
+          <div class="foto-perfil">
+            <img [src]="userInfo.avatar_url">
+          </div>
+          <div class="identificacao  d-flex flex-column justify-content-center align-items-start">
+            <div class="nome"> <b>{{userInfo.name}}</b></div>
+            <div class="login">@{{userInfo.login ? userInfo.login : 'Não Possui'}}</div>
+          </div>
+        </div>
+        <div class="margin mt-3">
+          {{userInfo.bio ? userInfo.bio : 'Não Possui Biografia'}}
+        </div>
+        <div class="margin infos-perfil">
+          <div class="icon">
+            <img src="/assets/icons/seguidores.png"> {{userInfo.followers}} seguidores
+          </div>
+          <div class="icon">
+            <img src="/assets/icons/seguindo.png"> {{userInfo.following}} seguindo
+          </div>
+        </div>
+        <div class="margin infos-perfil">
+          <div class="icon">
+            <img src="/assets/icons/work.png"> {{userInfo.company ? userInfo.company : 'Não Possui'}}
+          </div>
+          <div class="icon">
+            <img src="/assets/icons/local.png"> {{userInfo.location ? userInfo.location : 'Não Possui'}}
+          </div>
+          <div class="icon">
+            <img src="./assets/icons/email.png"> {{userInfo.email ? userInfo.email : 'Não Possui'}}
+          </div>
+          <div class="icon" *ngIf="userInfo.blog">
+            <img src="/assets/icons/site.png"><a [href]="userInfo.blog"> {{userInfo.blog }}</a>
+          </div>
+          <div class="icon" *ngIf="userInfo.twitter_username">
+            <img src="/assets/icons/twiter.png"> <a [href]="'https://twitter.com/'+ userInfo.twitter_username">
+              @{{userInfo.twitter_username }}</a>
+          </div>
+        </div>
+
+        <button class="btn btn-primary">Contato</button>
+      </div>
+
+
+      <div class="repositorios col-9">
+        <div class="repositorios col-12" *ngFor="let item of repositorios">
+          <div class="link">
+            <a [href]="item.html_url">{{item.name}}</a>
+          </div>
+
+          <div class="repositorio-info">
+            {{item.description ? item.description : 'Não Possui Descrição'}}
+          </div>
+
+          <div class="repositorio-info infos-perfil">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="../../assets/icons/star.png"> {{item.stargazers_count}}
+              <span><img src="../../assets/icons/dot.png"></span> Atualizado há {{item.updated_at}} dias
+            </div>
+
+          </div>
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+
+<div class="app-body col-12 p-0">
+  <div class="card-perfil-app col-12 ">
+    <div class="flex-row d-flex m-0">
+      <div class="foto-perfil d-flex align-items-center justify-content-start mr-2" >
+        <img class="m-0 mr-2" [src]="userInfo.avatar_url">
+      </div>
+      <div class="identificacao  d-flex flex-column justify-content-center align-items-start">
+        <div class="nome"> <b>{{userInfo.name}}</b></div>
+        <div class="login">@{{userInfo.login ? userInfo.login : 'Não Possui'}}</div>
+      </div>
+    </div>
+    <div class="margin infos-perfil d-flex justify-content-start ml-0 mt-2">
+      <div class="icon pr-2 ">
+        <img src="/assets/icons/seguidores.png"> {{userInfo.followers}} seguidores
+      </div>
+      <div class="icon">
+        <img src="/assets/icons/seguindo.png"> {{userInfo.following}} seguindo
+      </div>
+      
+    </div>
+    <div class="margin mt-2 ml-0">
+      {{userInfo.bio ? userInfo.bio : 'Não Possui Biografia'}}
+    </div>
+
+    <div class="d-flex pl-0 justify-content-between">
+      <div class="icon col-4 pl-0">
+        <img src="/assets/icons/work.png"> {{userInfo.company ? userInfo.company : 'Não Possui'}}
+      </div>
+      <div class="icon col-4 ">
+        <img src="/assets/icons/local.png"> {{userInfo.location ? userInfo.location : 'Não Possui'}}
+      </div>
+      <div class="icon col-4 ">
+        <img src="./assets/icons/email.png"> {{userInfo.email ? userInfo.email : 'Não Possui'}}
+      </div>
+    </div>
+    <div class="d-flex pl-0 justify-content-evenly">
+      <div class="icon" *ngIf="userInfo.blog">
+        <img src="/assets/icons/site.png"><a [href]="userInfo.blog"> {{userInfo.blog }}</a>
+      </div>
+      <div class="icon" *ngIf="userInfo.twitter_username">
+        <img src="/assets/icons/twiter.png"> <a [href]="'https://twitter.com/'+ userInfo.twitter_username">
+          @{{userInfo.twitter_username }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="repositorios col-12 pl-0">
+    <div class="repositorios col-12" *ngFor="let item of repositorios">
+      <div class="link">
+        <a [href]="item.html_url">{{item.name}}</a>
+      </div>
+
+      <div class="repositorio-info">
+        {{item.description ? item.description : 'Não Possui Descrição'}}
+      </div>
+
+      <div class="repositorio-info infos-perfil">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="../../assets/icons/star.png"> {{item.stargazers_count}}
+          <span><img src="../../assets/icons/dot.png"></span> Atualizado há {{item.updated_at}} dias
+        </div>
+
+      </div>
+      <hr>
+    </div>
+  </div>
+
+</div>

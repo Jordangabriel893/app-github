@@ -1,0 +1,126 @@
+.navbar {
+  height: 10vh;
+}
+
+.logo img {
+  width: 28vh;
+  margin-left: 5vh;
+  cursor: pointer;
+}
+
+.conteudo {
+  margin-top: 4vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.margin {
+  margin-bottom: 3vh;
+  margin-left: 2vh;
+}
+
+.search app-search-input {
+  width: 50% !important;
+}
+
+.foto-perfil img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin-left: 2vh;
+}
+
+.infos-perfil {
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #8c19d2;
+  border-color: #8c19d2;
+  margin-top: 4vh;
+}
+
+b {
+  font-size: 1.2em;
+}
+
+.repositorio-info {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding-left: 1vh;
+}
+
+img {
+  margin-right: 1vh;
+}
+
+.link a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.icon {
+  margin-bottom: 1vw;
+}
+
+.icon img {
+  width: 1.8rem;
+  height: 1.6rem;
+}
+
+.icon a {
+  text-decoration: none;
+  color: #4a5568;
+}
+
+@media(min-width:320px ) and (max-width:1300px){
+body{
+  display: none;
+}
+.app-body{
+  display: block;
+}
+.card-perfil-app{
+  background-color:rgba(242, 210, 255, 0.712);
+}
+.foto-perfil img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.identificacao div{
+  font-size: 0.9rem;
+}
+.icon{
+  font-size: 0.7rem;
+}
+.icon img {
+  width: 1.2rem;
+  height: 1rem;
+}
+.link{
+  word-break: break-all;
+}
+}
+@media(min-width:1300px ) {
+  .app-body{
+    display: none;
+  }
+}

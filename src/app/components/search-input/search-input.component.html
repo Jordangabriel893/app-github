@@ -1,0 +1,5 @@
+<div class="d-flex align-items-center {{classePai}}">
+  <img class="d-flex" src="../../../assets/icons/search.png">
+  <input class="d-flex" [class]="classe" type="text" [(ngModel)]="user" (keyup)="emitValues()" [disabled]="!enableInput"
+    placeholder="Search">
+</div>
